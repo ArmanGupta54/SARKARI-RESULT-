@@ -1,0 +1,888 @@
+<html>
+
+<head>
+    <title>Web Site </title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: arial;
+            box-sizing: border-box;
+
+        }
+
+        .text1 {
+            background-color: rgb(187, 39, 39);
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+
+        }
+
+        img {
+            margin: 20px;
+        }
+
+        p {
+            font-size: 20px;
+
+            margin-left: 60px;
+            color: white;
+            text-transform: uppercase;
+        }
+
+        h1 {
+
+
+
+            color: white;
+            text-transform: uppercase;
+            font-size: 50px;
+            margin-top: 60px;
+            margin-right: 220px;
+            font-weight: 600;
+
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            justify-content: around-between;
+            gap: 1px;
+
+        }
+
+        nav ul li {
+            background-color: black;
+            color: white;
+            font-size: 14px;
+
+            padding: 15px 31.1px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .container {
+
+            width: 100%;
+            margin: 0 auto;
+
+        }
+
+        h3 {
+            text-align: center;
+            padding: 30px;
+            font-weight: bold;
+            font-size: 15px;
+        }
+
+        h4 {
+            color: red;
+            text-align: center;
+            font-size: 15px;
+        }
+
+        .mychoice1 {
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+            padding: 10px 0px 5px 0px;
+
+        }
+
+        a {
+            color: blue;
+        }
+
+        .mychoice2 {
+            font-size: 18px;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .mychoice3 {
+
+            font-size: 18px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .mychoice4 {
+
+            font-size: 18px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .twitter {
+            background-color: blue;
+            width: 15%;
+            margin: 50px auto 5px auto;
+            border-radius: 20px;
+            padding: 5px 0;
+            text-align: center;
+            font-size: 12px;
+            color: white;
+            display: flex;
+            align-items: center;
+
+          
+        }
+       
+       
+
+        .twitter a {
+            color: rgb(255, 255, 255);
+            font-weight: bold;
+            margin-left: 7px;
+          
+          
+           
+        }
+          .twitter:hover{
+            background-color: rgb(58, 58, 207);
+          }
+        .tools {
+            background-color: rgb(74, 74, 182);
+            width: 35%;
+            margin: 7px auto;
+            padding: 5px 10px;
+            text-align: center;
+        }
+
+        .tools a {
+
+            text-align: center;
+            color: white;
+            font-size: 25px;
+            font-weight: bold;
+            text-decoration: none;
+            border-bottom:2px solid rgb(103, 103, 252);
+            padding-bottom: 0;
+        }
+
+        .box1 {
+
+            height: 70px;
+            margin-top: 20px;
+        }
+
+        .box1 h3 {
+            color: white;
+            margin-top: -18px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        .box1 #div1 {
+            background-color: #868a08;
+            margin: 2px;
+
+        }
+
+        .box1 #div2 {
+            background-color: #0404b4;
+            margin: 2px;
+
+        }
+
+        .box1 #div3 {
+            background-color: #fb5e03;
+            margin: 2px;
+
+        }
+
+        .box1 #div4 {
+            background-color: #8c0101;
+            margin: 2px;
+
+        }
+
+        .box1 {
+            display: flex;
+            justify-content: space-around;
+
+        }
+
+        .box2 {
+
+            height: 70px;
+            margin-top: 1px;
+        }
+
+        .box2 h3 {
+            color: white;
+            margin-top: -25px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        .box2 #div1 {
+            background-color: #fb0303;
+            margin: 2px;
+            padding: 10px;
+
+        }
+
+        .box2 #div2 {
+            background-color: #0b610b;
+            margin: 2px;
+
+        }
+
+        .box2 #div3 {
+            background-color: #ff00bf;
+            margin: 2px;
+            padding: 0px;
+        }
+
+        .box2 #div4 {
+            background-color: #0080ff;
+            margin: 2px;
+            padding: 15px;
+
+        }
+
+        .box2 {
+            display: flex;
+            justify-content: space-around;
+
+        }
+
+
+        .card {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin: 25px 0;
+
+
+        }
+
+        .card1 {
+            border: 2px solid rgb(173, 17, 17);
+            width: 30%;
+            
+        }
+
+        .card1 h2 {
+
+            text-align: center;
+            background-color: rgb(141, 40, 40);
+            color: white;
+            padding: 5px;
+        }
+
+        .card1 ul li {
+            line-height: 2;
+            list-style-type: square;
+            margin-left: 15px;
+        }
+
+        .card1 ul {
+            padding: 20px;
+        }
+
+        .card1>a {
+
+            color: rgb(33, 7, 128);
+            text-align: right;
+            display: block;
+            margin-right: 10px;
+            margin-top: -10px;
+            padding: 10px;
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .card-small {
+            height: 370px;
+
+        }
+
+        .vvv {
+            margin-top: -450px;
+            margin-left: 30px;
+        }
+
+        .vvv1 {
+            margin-top: -370px;
+            margin-left: 354px;
+        }
+
+        .define-area {
+            border: 2px solid brown;
+
+            width: 80%;
+            margin: 100px auto;
+            height: auto;
+        }
+
+        .define-area h2 {
+            background-color: rgb(148, 21, 21);
+            padding: 8px 10px;
+            margin-top: 30px;
+            text-align: center;
+            color: white;
+        }
+
+        .define-area p {
+            color: black;
+            margin-left: 25px;
+            margin-top: 20px;
+            text-transform: none;
+
+            font-size: 15px;
+
+        }
+
+        .define-area ol {
+            list-style-position: inside;
+            padding: 20px 15px;
+
+        }
+
+        .define-area ol li {
+            list-style-position: inside;
+            padding: 10px 15px;
+
+        }
+
+        .define-area h4 {
+            color: black;
+            text-align: left;
+
+            margin-left: 25px;
+            margin-top: 20px;
+            text-transform: none;
+
+            font-size: 15px;
+        }
+
+        .define-area ul {
+            list-style-position: inside;
+            padding: 20px 15px;
+
+        }
+
+        .define-area ul li {
+            list-style-position: inside;
+            padding: 1px 15px;
+
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        .padding {
+            padding-bottom: 20px;
+        }
+        footer{
+            display: flex;
+            justify-content: center;
+            gap:50px;
+            margin-bottom: 30px;
+        }
+        footer ul{
+            list-style: none;
+            font-size: 13px;
+           
+        }
+        footer h2{
+            margin-bottom: 20px;
+        }
+        footer a{
+            color:rgb(80, 79, 79);
+            text-decoration:none;
+        }
+        footer ul li{
+            line-height: 1.8;
+        }
+        .upsc{
+            margin-top: 42px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="text1 container">
+        <img src="logo-new.png" alt="">
+        <div>
+            <h1>Sarkari Result</h1>
+            <p>www.sarkariresult.com</p>
+        </div>
+    </div>
+    <nav>
+        <ul class="container">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Letest Jobs</a></li>
+            <li><a href="#">Result</a></li>
+            <li><a href="#">Admit Card </a></li>
+            <li><a href="#">Answer Key</a></li>
+            <li><a href="#">Syllabus</a></li>
+            <li><a href="#">Search</a></li>
+            <li><a href="#">Contanct Us</a></li>
+        </ul>
+    </nav>
+    <h3 class="container">Sarkari Result : SarkariResult.Com Sarkari Naukri Latest Jobs Online Form at Sarkari Result
+        2023</h3>
+    <h4>Welcome to India's No 1 Education Portal Sarkari Result</h4>
+
+    <div class="mychoice1 container">
+        <a href="#">Sarkari Result Android App</a> ||
+        <a href="#">Sarkari Result Youtube Channel</a> ||
+        <a href="#">Sarkari Result Apple / IOS Apps</a> ||
+        <a href="#">Follow Instagram</a>
+    </div>
+    <div class="mychoice2 container">
+        <marquee behavior="alternate" direction=""> <a href="#">UP Middle School TET Admit Card 2023</a> ||
+            <a href="#">Allahabad University </a> ||
+            <a href="#">PGT Online Form Online Form2023</a>
+        </marquee>
+    </div>
+    <div class="mychoice3 container">
+        <marquee behavior="alternate" direction=""><a href="#">CTET July 2023 Online Form</a> ||
+            <a href="#">UPMSP 12th Result 2023 Server II</a> ||
+            <a href="#">UPMSP 10th 12th Result 2023</a>
+        </marquee>
+
+    </div>
+    <div class="mychoice4 container">
+        <marquee behavior="alternate" direction=""> <a href="#">UPPSC Pre Admit Card 2023</a> ||
+            <a href="#">Sarkari Result Apple / IOS Apps</a> ||
+            <a href="#">UP Board Result Direct Link 2023</a>
+        </marquee>
+    </div>
+    <div class="twitter ">
+    
+        <a href="#">Follow@sarkari_result</a>
+    </div>
+    </div>
+    <div class="tools">
+        <a href="#">Sarkari Result Tools</a>
+    </div>
+    <div class="box1 container">
+        <div id="div1">
+            <h3>CTET July 2023 Apply Online</h3>
+        </div>
+        <div id="div2">
+            <h3>UPPSC Pre 2023 Admit CArd</h3>
+        </div>
+        <div id="div3">
+            <h3>UPPSC Pre 2023 Admit CArd</h3>
+        </div>
+        <div id="div4">
+            <h3>UPPSC Pre 2023 Admit CArd</h3>
+        </div>
+    </div>
+
+    <div class="box2 container">
+        <div id="div1">
+            <h3>Jharkhand PGT Apply Online</h3>
+        </div>
+        <div id="div2">
+            <h3>BARC Various Post Apply Online</h3>
+        </div>
+        <div id="div3">
+            <h3>JEE Advanced 2023 Apply Online</h3>
+        </div>
+        <div id="div4">
+            <h3>SSC CGL 2023 Apply Online</h3>
+        </div>
+    </div>
+
+
+    <div class="card">
+        <div class="card1">
+            <h2>Result</h2>
+            <ul>
+                <li><a href="#">UPSSC Rajsava Lekhpal Result 2023</a></li>
+                <li><a href="#">UPSP CPF AC 2019 Reserve List</a></li>
+                <li><a href="#">Rajasthan High Court JJA Clerk Result 2023</a></li>
+                <li><a href="#">SSC GD Constable 2022 Marks</a></li>
+                <li><a href="#">BSF Head Constable RO RM Final Additional Result 2023</a></li>
+                <li><a href="#">Allahabad High Court Group C.D Final Result 2023</a>
+                </li>
+                <li><a href="#">SSC CHSL 2021 Final Result </a></li>
+                <li><a href="#">SSC GD Constable 2022 Marks</a></li>
+                <li><a href="#">BSF Head Constable RO RM Final Additional Result 2023</a></li>
+                <li><a href="#">Allahabad High Court Group C.D Final Result 2023</a>
+                <li><a href="#">UPSSC Rajsava Lekhpal Result 2023</a></li>
+                <li><a href="#">UPSP CPF AC 2019 Reserve List</a></li>
+                <li><a href="#">Rajasthan High Court JJA Clerk Result 2023</a></li>
+                <li><a href="#">SSC GD Constable 2022 Marks</a></li>
+            </ul>
+            <a href="">View More</a>
+        </div>
+        <div class="card1">
+            <h2>Admit Card</h2>
+            <ul>
+                <li><a href="#">UPSSC Rajsava Lekhpal Result 2023</a></li>
+                <li><a href="#">UPSP CPF AC 2019 Reserve List</a></li>
+                <li><a href="#">Rajasthan High Court JJA Clerk Result 2023</a></li>
+                <li><a href="#">SSC GD Constable 2022 Marks</a></li>
+                <li><a href="#">BSF Head Constable RO RM Final Additional Result 2023</a></li>
+                <li><a href="#">Allahabad High Court Group C.D Final Result 2023</a>
+                </li>
+                <li><a href="#">SSC CHSL 2021 Final Result </a></li>
+                <li><a href="#">SSC GD Constable 2022 Marks</a></li>
+                <li><a href="#">BSF Head Constable RO RM Final Additional Result 2023</a></li>
+                <li><a href="#">Allahabad High Court Group C.D Final Result 2023</a>
+                <li><a href="#">UPSSC Rajsava Lekhpal Result 2023</a></li>
+                <li><a href="#">UPSP CPF AC 2019 Reserve List</a></li>
+                <li><a href="#">Rajasthan High Court JJA Clerk Result 2023</a></li>
+                <li><a href="#">SSC GD Constable 2022 Marks</a></li>
+            </ul>
+            <a href="">View More</a>
+        </div>
+        <div class="card1">
+            <h2>Latest Jobs</h2>
+            <ul>
+                <li><a href="#">UPSSC Rajsava Lekhpal Result 2023</a></li>
+                <li><a href="#">UPSP CPF AC 2019 Reserve List</a></li>
+                <li><a href="#">Rajasthan High Court JJA Clerk Result 2023</a></li>
+                <li><a href="#">SSC GD Constable 2022 Marks</a></li>
+                <li><a href="#">BSF Head Constable RO RM Final Additional Result 2023</a></li>
+                <li><a href="#">Allahabad High Court Group C.D Final Result 2023</a>
+                </li>
+                <li><a href="#">SSC CHSL 2021 Final Result </a></li>
+                <li><a href="#">SSC GD Constable 2022 Marks</a></li>
+                <li><a href="#">BSF Head Constable RO RM Final Additional Result 2023</a></li>
+                <li><a href="#">Allahabad High Court Group C.D Final Result 2023</a>
+                <li><a href="#">UPSSC Rajsava Lekhpal Result 2023</a></li>
+                <li><a href="#">UPSP CPF AC 2019 Reserve List</a></li>
+                <li><a href="#">Rajasthan High Court JJA Clerk Result 2023</a></li>
+                <li><a href="#">SSC GD Constable 2022 Marks</a></li>
+            </ul>
+            <a href="#">View More</a>
+        </div>
+    </div>
+
+
+    <div class="card">
+        <div class="card1 card-small">
+            <h2>Answer Key</h2>
+            <ul>
+                <li><a href="#">UPSSC Rajsava Lekhpal Result 2023</a></li>
+                <li><a href="#">UPSP CPF AC 2019 Reserve List</a></li>
+                <li><a href="#">Rajasthan High Court JJA Clerk Result 2023</a></li>
+                <li><a href="#">SSC GD Constable 2022 Marks</a></li>
+                <li><a href="#">BSF Head Constable RO RM Final Additional Result 2023</a></li>
+
+            </ul>
+            <a href="">View More</a>
+        </div>
+        <div class="card1 card-small">
+            <h2>Syllabus</h2>
+            <ul>
+                <li><a href="#">UPSSC Rajsava Lekhpal Result 2023</a></li>
+                <li><a href="#">UPSP CPF AC 2019 Reserve List</a></li>
+                <li><a href="#">Rajasthan High Court JJA Clerk Result 2023</a></li>
+                <li><a href="#">SSC GD Constable 2022 Marks</a></li>
+                <li><a href="#">BSF Head Constable RO RM Final Additional Result 2023</a></li>
+
+            </ul>
+            <a href="">View More</a>
+        </div>
+
+
+        <div class="card1">
+            <h2>Admission</h2>
+            <ul>
+                <li><a href="#">UPSSC Rajsava Lekhpal Result 2023</a></li>
+                <li><a href="#">UPSP CPF AC 2019 Reserve List</a></li>
+                <li><a href="#">Rajasthan High Court JJA Clerk Result 2023</a></li>
+                <li><a href="#">SSC GD Constable 2022 Marks</a></li>
+                <li><a href="#">BSF Head Constable RO RM Final Additional Result 2023</a></li>
+                <li><a href="#">Allahabad High Court Group C.D Final Result 2023</a>
+                </li>
+                <li><a href="#">SSC CHSL 2021 Final Result </a></li>
+                <li><a href="#">SSC GD Constable 2022 Marks</a></li>
+                <li><a href="#">BSF Head Constable RO RM Final Additional Result 2023</a></li>
+                <li><a href="#">Allahabad High Court Group C.D Final Result 2023</a>
+                <li><a href="#">UPSSC Rajsava Lekhpal Result 2023</a></li>
+                <li><a href="#">UPSP CPF AC 2019 Reserve List</a></li>
+                <li><a href="#">Rajasthan High Court JJA Clerk Result 2023</a></li>
+                <li><a href="#">SSC GD Constable 2022 Marks</a></li>
+            </ul>
+            <a href="#">View More</a>
+        </div>
+
+    </div>
+    <div class="card1 card-small vvv">
+        <h2>Certificate Verification</h2>
+        <ul>
+            <li><a href="#">UPSSC Rajsava Lekhpal Result 2023</a></li>
+            <li><a href="#">UPSP CPF AC 2019 Reserve List</a></li>
+            <li><a href="#">Rajasthan High Court JJA Clerk Result 2023</a></li>
+            <li><a href="#">SSC GD Constable 2022 Marks</a></li>
+            <li><a href="#">BSF Head Constable RO RM Final Additional Result 2023</a></li>
+
+        </ul>
+        <a href="">View More</a>
+    </div>
+    <div class="card1 card-small vvv1">
+        <h2>Important</h2>
+        <ul>
+            <li><a href="#">UPSSC Rajsava Lekhpal Result 2023</a></li>
+            <li><a href="#">UPSP CPF AC 2019 Reserve List</a></li>
+            <li><a href="#">Rajasthan High Court JJA Clerk Result 2023</a></li>
+            <li><a href="#">SSC GD Constable 2022 Marks</a></li>
+            <li><a href="#">BSF Head Constable RO RM Final Additional Result 2023</a></li>
+
+        </ul>
+        <a href="">View More</a>
+    </div>
+    <div class="define-area">
+        <H2>
+            Sarkari Result : Resources to Help Indians Get Government Jobs (Sarkari Job)
+        </H2>
+        <p class="center">The future is uncertain, but a government job, Sarkari Jobs can help you secure your future.
+            Click for
+            valuable resources and help from Sarkari Result.</p>
+        <p class="center">Did you know that over 1.5 million people lost their jobs in August 2021 in rural and urban
+            India? Yes, the
+            COVID-19 pandemic has hit the job market hard. Small businesses and multinationals alike have had to
+            reconsider their staffing requirements.
+        </p>
+        <p class="center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque cum exercitationem minus. Quos
+            deserunt autem
+            temporibus explicabo adipisci a repellendus enim sequi, perspiciatis harum, doloribus aspernatur esse
+            delectus aperiam aut.
+        </p>
+        <p class="center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque cum exercitationem minus. Quos
+            deserunt autem
+            temporibus explicabo adipisci a repellendus enim sequi, perspiciatis harum, doloribus aspernatur esse
+            delectus aperiam aut.
+        </p>
+        <p class="center
+        ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque cum exercitationem minus. Quos aspernatur
+            esse delectus aperiam aut.
+        </p>
+        <p class="center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque cum exercitationem minus.
+            aspernatur esse
+            delectus aperiam aut.
+        </p>
+        <h2>Why Should I Consider a Government Job?</h2>
+
+        <p class="center">In India, a Sarkari Naukri (or an Indian government job) is highly sought-after. It's the
+            ultimate career goal, offering long-term security, good benefits, and friendly co-workers.
+            .</p>
+        <p class="center">More than that, an Indian government job offers an opportunity to live a life of purpose.
+
+        <p class="center">It's a way for you to give back to your community.</p>
+        </p>
+        <p class="center">According to the Centre for Monitoring Indian Economy Pvt. Ltd. (CMIE), the unemployment rate
+            in India increased from 6.5% in November 2020 to 7.75% in October 2021. In this fluctuating market, there
+            has been an increase in the demand for the stability and permanence offered by a Sarkari Naukri.
+        </p>
+        <p class="center">In addition, government jobs in India can be pretty lucrative offering competitive salaries,
+            benefits, and pensions. Some of the highest-paid jobs in the Indian government include the Indian
+            Administrative Services (IAS), Indian Foreign Services (IFS), and Indian Police Services (IPS).
+        </p>
+        <p class="center">Keep in mind that these jobs are also highly competitive with a complex application process!
+        </p>
+
+
+        <h2>What Kind of Government Jobs Can I Get?</h2>
+        <p>There are a wide variety of government jobs in India. It depends on your interests, but a job in the
+            government can range from policy-making, public administration, military, law, engineering, and even
+            teaching. Some of the more highly-paid and in-demand positions are discussed below to give you a sense of
+            their requirements and salary expectations.</p>
+        <ol>
+            <li>Indian Administrative Services (IAS) and Indian Foreign Services (IFS) Jobs : The role of an IAS officer
+                may include advising the ministers on various policy issues, implementing policies of the government,
+                collecting revenue, and supervising public spending. An IFS officer manages foreign relations in India
+                with more than 160 Indian Diplomatic Missions and International Organizations around the world. The
+                starting monthly salary of an IAS or IFS officer is about INR 56,100.</li>
+            <li>Indian Police Services (IPS) Jobs : A role with the IPS involves safeguarding the public, maintaining
+                law and order, and detecting and preventing crime. The role can be with the various agencies and
+                branches including the Research and Analysis Wing (R&AW), Intelligence Bureau (IB), Central Bureau of
+                Investigation (CBI), and Criminal Investigation Department (CID). To be eligible for a job with IPS,
+                there are additional requirements, including physical standards. Physical eligibility includes minimum
+                height for men and women, minimum chest girth for men and women, restriction on vision impairments
+                including myopia limited to less than -4.00, and hyper myopia not exceeding +4.00. According to
+                Payscale, an entry-level police constable with less than 1-year experience can earn an average total
+                compensation of INR 255,094. This includes tips, bonuses, and overtime pay.</li>
+            <li>Banking Jobs :The banking sector is one of the fastest-growing sectors in India. It's not surprising
+                that jobs in government-approved banks such as the State Bank of India (SBI), Allahabad Bank, HDFC, and
+                ICICI are highly sought after. A job in the banking sector could either be a clerical position such as
+                typists, data entry operators, cashiers, or clerks or a probationary officer (PO) role. As a PO, the
+                candidate will be under probation during the training period and will be hired following the probation
+                based on performance. During the training period, the candidate will be trained in accounting, finance,
+                billing, investment, and revenue collection. A PO role allows opportunities for career growth to middle
+                and senior management based on performance and additional examinations. The starting monthly salary of a
+                PO is about INR 57,000 including allowances.</li>
+            <li> Defence Jobs : Jobs with the National Defence Academy (NDA) can be in various departments, such as
+                Army, Navy, Air Force, Coast Guard, etc. A job in the NDA comes with strict restrictions on age,
+                physical, and vision standards. Cadet trainees receive a stipend of INR 56,100 per month. Allowances and
+                promotions will increase this salary. There are also several agricultural, engineering, and research
+                jobs with their own set of rules and requirements. These can get very complicated, but Sarkari Result
+                does all the work for you and lists the various jobs ranging from a Rajasthani police constable to
+                Allahabad High Court Review Officer. Each job posting contains all the details you would need to be able
+                to apply for the position with ease.</li>
+        </ol>
+        <h2>With All the Competition, How Can I Get a Job Working in the Government?</h2>
+        <p>It's not easy to stand out in the face of this competition. But by following these four steps and with the
+            right resources at your disposal, getting that Indian government job will no longer be a mere dream.</p>
+        <h4>Step 1: Research the Job Requirements at Sarkari Result</h4>
+        <p>The first step to getting an Indian government job is knowing what you are applying to. To get a job in the
+            Indian government, you need to meet several eligibility requirements, keep note of important deadlines, pay
+            fees associated with the job application and complete the competitive examination.</p>
+        <p>Before you end up rushing around, spend some time going through these requirements and understanding them.
+            Rather than going to several different websites and getting lost in the mix, Sarkari Result provides a
+            one-page summary that shows:</p>
+        <ul>
+            <li>Number of Vacancies</li>
+            <li>Important Dates</li>
+            <li>Application Fee</li>
+            <li>Education Eligibility</li>
+            <li>Age Limit</li>
+            <li>Exam Notice</li>
+            <li>Online Application Link</li>
+        </ul>
+        <p>This one-page summary is a good way to get all of the information in a single easy-to-read format. It's the
+            best resource to help get you from Step 1 through to Step 4, all the way to the perfect government job in
+            India.</p>
+        <h4>Eligibility Requirements</h4>
+        <p>Unlike most private company jobs, government jobs in India need more than good interview skills. The
+            eligibility requirements can vary for every job, and includes restrictions on the candidate's age,
+            educational qualifications, nationality, experience, marital status, gender, etc</p>
+        <p>A job with the IAS/IFS posted in 2021 on Sarkari Result shows a one-page summary of all the eligibility
+            requirements including:</p>
+        <ul>
+            <li>Vacancy for 822 posts,
+            </li>
+            <li>Age limits from 21 to 32 years,</li>
+            <li>Bachelor's degree education requirements.</li>
+
+        </ul>
+        <h4>Important Dates</h4>
+        <p>Take note of the deadlines! This is especially important. After all, you don't want to miss out on the job of
+            a lifetime because you missed the deadline.</p>
+        <p>There are several important dates to note:</p>
+        <ul>
+            <li>Application Start Date</li>
+            <li>Last Date for Apply Online</li>
+            <li>Last Date Pay Exam Fee</li>
+            <li>Examination Date (or new date if postponed)</li>
+            <li>Last Date to Change Exam District</li>
+            <li>Pre Result Available</li>
+
+        </ul>
+        <p>Each job posting on Sarkari Result shows this information in an easy-to-read chart, so you'll never miss a
+            deadline!</p>
+        <h2>Sarkari Result 2023 : SarkariResult.Com</h2>
+        <p>India has witnessed a high demand for Government jobs for many decades. People prefer Government jobs as
+            their career option considering the wide variety of benefits that are associated with these. ‘Sarkari
+            Naukri’ is a dream for millions of people across the nation, and only a few are lucky to land up with such
+            jobs. People tend to take pride in having a Sarkari or Government job.</p>
+        <p>Government jobs hold the kind of authority not found in private jobs. These also offer job security for a
+            lifetime, and hence a lot of youth prefer them. Getting into a Government job requires a person to go
+            through multiple levels of tests. These include a written examination, interview and sometimes even physical
+            examination. These are competitive exams, and millions of people appear for these exams to get into a
+            coveted Government job.</p>
+        <h2>How Competitive Is the Government Job Market?</h2>
+        <p class="center">There is no doubt that finding an Indian government job is highly competitive. The Times of
+            India said it best when they said that the numbers are staggering:</p>
+
+        <ul class="center">
+            <li>2.3 million applications for 368 peon positions in Uttar Pradesh.</li>
+            <li>2.5 million applications for 6,000 positions in Bengal</li>
+            <li>200,000 applications for 1,137 positions as police constables in Maharashtra.</li>
+
+
+        </ul>
+        <p class="center">When the Ministry of Railways started recruiting for around 63,000 positions, they received
+            more than 19 million (1.9 crores) job applications.</p>
+        <p class="center">With COVID-19, the competition has only increased because of the drop in the number of people
+            hired by the government. The central government hired 119,000 people in 2021 which is a reduction in almost
+            32,000 jobs. There was a similar drop in 2021 of almost 107,000 people hired by the state government. This
+            creates an extremely competitive environment. Getting up-to-date information on the latest jobs on Sarkari
+            Result and understanding eligibility requirements can help you stand out from the crowd. These are of course
+            some of the most coveted roles in India and are extremely competitive.</p>
+        <h2>Why trust SarkariResult.com for Sarkari Result?</h2>
+        <p class="center">SarkariResult.Com You also know the name of Sarkari Result, this is not only a website but it
+            is the trust of millions of unemployed youth / studying youth. Sarkari Result was established on 01 Jan 2012
+            and since then this Sarkari Result website is a trust and trust in which crores of youth are looking for
+            government job/exam result/admit card/exam date information. Sarkari Result is the first and most accurate
+            information reaches the youth, for which the entire team of Sarkari Result works 24x7.</p>
+        <p class="center padding">Whenever a new exam result comes, exam admit card comes or any new government job,
+            whether SSC / UPSC / state government or any other recruitment comes by the central government, first of all
+            the youth open the Sarkari Result website and View information.</p>
+    </div>
+
+    <footer>
+        <div>
+            <h2>Quick Links</h2>
+            <ul>
+                <li><a href="#">Sarkari Result @Twitter</a></li>
+                <li><a href="#">Sarkari Result @Telegram</a></li>
+                <li><a href="#">Sarkari Result @Instagram</a></li>
+                <li><a href="#">Sarkari Result @Koo</a></li>
+                <li><a href="#">Sarkari Result @Facebook</a></li>
+                <li><a href="#">Sarkari Result @Linkedin</a></li>
+                <li><a href="#">Sarkari Result @Youtube</a></li>
+                <li><a href="#">Sarkari Result Contact Us</a></li>
+                <li><a href="#">All Board Exams</a></li>
+            </ul>
+        </div>
+        <div>
+            <h2>Apps</h2>
+            <ul>
+                <li><a href="#">Android App</a></li>
+                <li><a href="#">Apple IOS App</a></li>
+                <li><a href="#">Window App</a></li>
+                
+            </ul>
+        </div>
+        <div>
+            <h2>More</h2>
+            <ul>
+                <li><a href="#">BPSC</a></li>
+                <li><a href="#">UP-scholorship</a></li>
+                <li><a href="#">UPSC</a></li>
+                <li><a href="#">RPSC</a></li>
+                <li><a href="#">UPPCS</a></li>
+                <li><a href="#">Coast Guard</a></li>
+                
+            </ul>
+        
+        </div>
+        <div>
+         
+            <ul class="upsc">
+                <li><a href="#">UPSSSC</a></li>
+                <li><a href="#">IBPS</a></li>
+                <li><a href="#"> Air Force</a></li>
+                <li><a href="#">Delhi Dssb</a></li>
+                <li><a href="#">HSSC</a></li>
+                <li><a href="#">Police Vacancy</a></li>
+                
+            </ul>
+        
+        </div>
+        <div>
+         
+            <ul class="upsc">
+                <li><a href="#">CCC</a></li>
+                <li><a href="#">SSC</a></li>
+                <li><a href="#">Navy</a></li>
+                <li><a href="#">Railways</a></li>
+                <li><a href="#">TET</a></li>
+                
+                
+            </ul>
+        
+        </div>
+    </footer>
+</body>
+
+</html>
